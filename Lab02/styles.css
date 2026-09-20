@@ -1,0 +1,122 @@
+
+* {
+box-sizing: border-box;
+margin: 10;
+padding: 10;
+border: 10;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f4f6f9;
+padding: 20px;
+}
+
+.form-container{
+    max-width: 500px;
+    margin: 40px auto;
+    background-color:#e2e8f0 ;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(245, 95, 95, 0.5);
+
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border:1px solid#ccc;
+    border-radius: 4px;
+    color: #880000;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+    color: #333;
+}
+.form-group {
+margin-bottom: 15px;
+width: 100%;
+max-width: 400px;
+}
+
+
+
+.form-label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+color: #333;
+}
+.form-input {
+width: 100%;
+padding: 10px 12px;
+border: 1px solid #be8282;
+border-radius: 4px;
+font-size: 14px;
+transition: border-color 0.3s;
+}
+.form-input:focus {
+border-color: #9e0707;
+outline: none;
+box-shadow: 0 0 5px rgba(29, 29, 29, 0.5);
+}
+.form-input:invalid:not(:placeholder-shown) {
+border-color: #ccc5c5;
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    accent-color: rgba(211, 7, 7, 0.774);
+    cursor: pointer;
+
+} 
+
+textarea.form-input{
+    resize: vertical;
+    min-height: 80px;
+}
+
+select.form-input{
+    background-color: #d6aaaa;
+    cursor:pointer;
+}
+
+button[type="submit"]{
+    background-color: rgb(224, 106, 106);
+    color: beige;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2, transform 0.1s;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #b6b1b1;
+
+}
+
+button[type="submit"]:active {
+    background-color: #eed4d4;
+    transform: scale(0.98);
+}
+button[type="submit"]:disabled {
+    background-color: #cad4e2;
+    cursor: not-allowed;
+    transform: none;
+}
+ 
+.form-input:disabled {
+    background-color: #edf2f7;
+    color: #520404;
+    cursor: not-allowed;
+    border-color: #d6e3f5;
+}
+ 
+.form-input:active {
+    border-color: #f50606c7;
+}

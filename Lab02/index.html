@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title> Registro de estudiantes</title>
+       <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form action="/procesar" method="POST" class="form-container">
+    <fieldset>
+        <legend>Informacion personal</legend>
+
+       <div class="form-group"> 
+            <label for="number" class="form-label">Numero de telefono:</label>
+            <input type="number" id="number" name="number" class="form-input"
+                   required placeholder="Ingrese su numero">
+       </div>
+
+       <div class="form-group">
+            <label for="date" class="form-label">Fecha de nacimiento:</label>
+            <input type="date" id="date" name="date" class="form-input"
+             required min="1946-09-18" max="2010-09-18" 
+                       placeholder="Fecha">
+       </div>
+
+       <div class="form-group">
+            <label for="carrera" class="form-label">Carrera profesional:</label>
+            <select id="carrera" name="carrera" class="form-input" required>
+              <option value="">Selecciona una escuela profesional</option> 
+              <option value="sistemas">Ingenieria de sistemas</option>     
+              <option value="medicina">Medicina</option>
+              <option value="derecho">Derecho</option>
+              <option value="civil">Ingenieria Civil</option>
+              <option value="psicologia">Psicologia</option>
+              <option value="administracion">Administración</option>
+              <option value="electronica">Ingenieria Electronica</option>
+              <option value="historia">Historia</option>
+            </select>
+       </div>
+
+       
+       <div class="form-group">
+            <label for="turno_mañana" class="form-label">Turno mañana</label>
+            <input type="radio" id="turno_mañana" name="turno" value="mañana">
+       </div>    
+
+       <div class="form-group">
+            <label for="turno_tarde" class="form-label">Turno tarde</label>
+            <input type="radio" id="turno_tarde" name="turno" value="tarde" >
+       </div>
+
+       <div class="form-group">
+            <label for="turno_noche" class="form-label">Turno noche</label>
+            <input type="radio" id="turno_noche" name="turno" value="noche" >
+        </div>
+
+          
+
+
+
+
+       <div class="form-group">
+            <label for="comentarios" class="form-label">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" class="form-input" 
+             placeholder="Escribe un comentario"></textarea> 
+       
+       </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informacion de la cuenta</legend>
+         <div class="form-group">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="form-input" 
+                   required placeholder="Ingrese su nombre">
+       </div>
+
+        <div class="form-group">
+            <label for="email" class="form-label">Correo Institucional:</label>
+            <input type="email" id="email" name="email" class="form-input" 
+                   required placeholder="usuario@universidad.edu.pe">
+       </div>  
+
+       <div class="form-group">
+            <label for="password" class="form-label">Contraseña:</label>
+            <input type="password" id="password" name="password" class="form-input"
+          
+            required minlength="8"
+            pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+            title="Minimo 8 caracteres, una mayuscula y un numero al menos"
+            placeholder="Ingrese su contraseña">       
+       </div>
+
+      <div class="form-group">
+         <label for="codigo" class="form-label">Código del estudiante:</label>
+         <input type="text" id="codigo" name="codigo" required
+         pattern="[0-9]{8}" maxlength="8" inputmode="numeric"
+         placeholder="Ej.20261111">
+      </div>
+
+       <div class="form-group">
+            <label for="aceptacion" class="form-label">Aceptas los terminos y condiciones: </label>
+            <input type="checkbox" id="aceptacion" name="aceptacion" >
+       </div>     
+
+          
+    </fieldset>
+    <div class="form-group">
+        <button type="submit" class="form-group">Registrarse</button>
+
+    </div>
+
+    
+</form>
+</body>
+</html>
+
+
+
+
+
+
