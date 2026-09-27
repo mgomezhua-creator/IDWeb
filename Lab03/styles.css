@@ -1,0 +1,61 @@
+:root {
+  --bs-primary: #800020;           
+  --bs-primary-rgb: 128, 0, 32;   
+}
+
+.btn-primary {
+  --bs-btn-bg: #800020;
+  --bs-btn-border-color: #800020;
+  --bs-btn-hover-bg: #5c0017;
+  --bs-btn-hover-border-color: #5c0017;
+  --bs-btn-active-bg: #29010b;
+  --bs-btn-active-border-color: #29010b;
+  --bs-btn-focus-shadow-rgb: 128, 0, 32;
+}
+
+/* Configuración por defecto para pantallas pequeñas / Móviles */
+.hero-section {
+  display: flex;
+  flex-direction: column; /* Coloca la imagen debajo del texto en móviles */
+  align-items: center;    /* Centra los elementos */
+  gap: 2rem;            /* Añade un espacio entre el texto y la imagen */
+}
+
+/* SECCIÓN 3: Catálogo de Cursos (CSS Grid Nativo) */
+.courses-grid {
+  display: grid; /* <--- Transforma el contenedor padre en CSS Grid */
+  grid-template-columns: 1fr;
+  gap: 1.5rem; 
+}
+
+.hero-content, 
+.hero-image {
+  flex: 1; /* Reparte el espacio en partes iguales */
+  width: 100%;
+}
+
+/*  Estilos para pantallas de Escritorio (≥992px) */
+@media (min-width: 992px) {
+  .hero-section {
+    flex-direction: row; /* Coloca el texto a la izquierda y la imagen a la derecha */
+  }
+}
+
+@media (min-width: 576px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr); /* tablet: 2 columnas */
+  }
+}
+
+@media (min-width: 992px) {
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr); /* escritorio: 3 columnas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .courses-grid {
+    grid-template-columns: repeat(4, 1fr); /* pantallas grandes: 4 columnas */
+  }
+}
+

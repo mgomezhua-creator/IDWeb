@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Sistemas Web de Gestion Academica</title>
+
+<!-- CSS de Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <!--Nombre del sitio-->
+         <a class="navbar-brand fw-bold" href="#">Portal Academico</a>
+         <!--boton hamburguesa-->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
+         aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--contenedor colapsable-->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+               <li class="nav-item">
+                  <a class="nav-link active" href="#">Inicio</a>
+               </li> 
+
+               <li class="nav-item">
+                   <a class="nav-link" href="#cursos">Cursos</a>
+               </li>
+
+               <li class="nav-item">
+                  <a class="nav-link" href="#noticias">Noticias</a>
+               </li>
+            </ul>
+
+            <!--Botones adaptables - flexbox-->
+            <div class="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0">
+                <a href="#" class="btn btn-outline-light w-100 w-lg-auto">Iniciar sesión</a>
+                <a href="#" class="btn btn-warning fw-semibold w-100 w-lg-auto">Registrarse</a>
+            </div> 
+
+        </div>
+
+      </div>
+   </nav> 
+
+   <header class="container my-4">
+     <!--contener principal-flexbox  -->
+       <section class="hero-section">
+          <!--bloque de texto- ixquierda-->
+          <div class="hero-content">
+             <h1>Sistema Web de Gestion Academica
+              
+             </h1>
+             <p> Con educacion de calidad</p>
+             <a href="#cursos" class="btn btn-primary btn-lg">Explorar programas</a>
+    
+          </div>
+
+          <!--bloque de imagen-Derecha-->
+          <div class="hero-image">
+            <img src="https://picsum.photos/600/400?random=1" alt="Estudiantes universitarios" class="img-fluid">
+        
+          </div>       
+        </section> 
+   </header>
+
+   <!-- PASO 3: Catálogo de Cursos -->
+<section id="cursos" class="container py-5">
+
+  <h2 class="text-center fw-bold mb-4">Cursos Academicos</h2>
+
+  <!-- Contenedor Padre de la Rejilla -->
+  <div class="courses-grid">
+    
+    <!-- Tarjeta 1 -->
+    <div class="card shadow-sm">
+      <img src="https://picsum.photos/300/180?random=1" class="card-img-top" alt="Curso 1">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Desarrollo Web</h5>
+        <p class="card-text text-muted">Desarrollo web moderno.</p>
+        <a href="#" class="btn btn-outline-primary w-100">Mas informacion</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card shadow-sm">
+      <img src="https://picsum.photos/300/180?random=2" class="card-img-top" alt="Curso 2">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Ciencia de Datos</h5>
+        <p class="card-text text-muted">Análisis de datos masivos y modelos con Python.</p>
+        <a href="#" class="btn btn-outline-primary w-100">Mas informacion</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="card shadow-sm">
+      <img src="https://picsum.photos/300/180?random=3" class="card-img-top" alt="Curso 3">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Ciberseguridad</h5>
+        <p class="card-text text-muted">Protección de redes y sistemas informáticos.</p>
+        <a href="#" class="btn btn-outline-primary w-100">Ver Detalle</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="card shadow-sm">
+      <img src="https://picsum.photos/300/180?random=4" class="card-img-top" alt="Curso 4">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Estructuras de datos </h5>
+        <p class="card-text text-muted">Logica inical de programacion.</p>
+        <a href="#" class="btn btn-outline-primary w-100">Ver Detalle</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 5 -->
+    <div class="card shadow-sm">
+      <img src="https://picsum.photos/300/180?random=5" class="card-img-top" alt="Curso 5">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Inteligencia Artificial</h5>
+        <p class="card-text text-muted">Conceptos basicos, agentes inteligentes y metodologias de busqueda</p>
+        <a href="#" class="btn btn-outline-primary w-100">Ver Detalle</a>
+      </div>
+    </div>
+
+    <!-- Tarjeta 6 -->
+    <div class="card shadow-sm">
+      <img src="https://picsum.photos/300/180?random=6" class="card-img-top" alt="Curso 6">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Java Avanzado</h5>
+        <p class="card-text text-muted">Desarrollo de software orientado a objetos</p>
+        <a href="#" class="btn btn-outline-primary w-100">Ver Detalle</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PASO 4: Módulo de Noticias y Eventos -->
+<section id="noticias" class="bg-light py-5">
+
+  <div class="container">
+    
+    <!-- Título de la sección con margen inferior -->
+    <h2 class="text-center fw-bold mb-4">Noticias y Eventos</h2>
+
+    <!-- Fila contenedora de noticias (Sistema de Grid de Bootstrap) -->
+    <div class="row g-4">
+      <!-- Fila contenedora de noticias -->
+
+
+  <!-- Tarjeta Noticia 1 -->
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body d-flex flex-column">
+        <span class="badge bg-primary w-auto align-self-start mb-2">Evento</span>
+        <h5 class="card-title fw-bold">Relaciones Industriales</h5>
+        <p class="card-text text-muted">Conmemora 60 años de vida profesional con ceremonias y el logro de liquidar una obra pendiente por 15 años.</p>
+        
+        <!-- Botón activador del Modal (Paso siguiente) -->
+        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalNoticia1">
+          Más información
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tarjeta Noticia 2 -->
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body d-flex flex-column">
+        <span class="badge bg-success w-auto align-self-start mb-2">Convocatoria</span>
+        <h5 class="card-title fw-bold">Talleres Extracurriculares de actividades artisticas y deportivas</h5>
+        <p class="card-text text-muted">Apertura de inscripciones Proceso Ordinario 2026-III de TALLERES EXTRACURRICULARES DE ACTIVIDADES ARTÍSTICAS Y DEPORTIVAS.</p>
+        
+        <!-- Botón activador del Modal (Paso siguiente) -->
+        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalNoticia2">
+          Más información
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tarjeta Noticia 3 -->
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body d-flex flex-column">
+        <span class="badge bg-warning text-dark w-auto align-self-start mb-2">Taller</span>
+        <h5 class="card-title fw-bold">Seminario de Inteligencia Artificial</h5>
+        <p class="card-text text-muted">Aprende sobre el impacto de la IA generativa en la industria del software actual.</p>
+        
+        <!-- Botón activador del Modal (Paso siguiente) -->
+        <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalNoticia3">
+          Más información
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+      
+      <!--  Tarjetas de Noticias  -->
+    </div>
+  </div>
+</section>
+
+<!-- VENTANAS MODALES INTERACTIVAS   -->
+<!-- Modal para la Noticia 1 -->
+<div class="modal fade" id="modalNoticia1" tabindex="-1" aria-labelledby="modalNoticia1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <!-- Encabezado del Modal -->
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modalNoticia1Label">Feria de Innovación Tecnológica 2026</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <!-- Cuerpo del Modal con detalles adicionales -->
+      <div class="modal-body">
+        <p><strong>Fecha:</strong> 15 de Octubre de 2026</p>
+        <p><strong>Lugar:</strong> Campus Principal - Auditorio Central</p>
+        <hr>
+        <p>La Feria de Innovación Tecnológica es el espacio donde nuestros estudiantes presentan sus proyectos más destacados en desarrollo de software, robótica, inteligencia artificial y ciberseguridad.</p>
+        <p>Habrá conferencias con expertos de la industria, talleres en vivo y oportunidades de *networking* con empresas invitadas.</p>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Inscribirse al Evento</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal para la Noticia 2 -->
+<div class="modal fade" id="modalNoticia2" tabindex="-1" aria-labelledby="modalNoticia2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modalNoticia2Label">Becas de Intercambio Internacional</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Requisitos:</strong> Pertenecer al tercio superior y contar con nivel B2 de inglés.</p>
+        <hr>
+        <p>Postula a los convenios académicos con universidades en Europa, Asia y América del Norte para cursar el semestre 2027-1.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para la Noticia 3 -->
+<div class="modal fade" id="modalNoticia3" tabindex="-1" aria-labelledby="modalNoticia3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modalNoticia3Label">Seminario de Inteligencia Artificial</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Modalidad:</strong> Virtual / Presencial</p>
+        <hr>
+        <p>Aprende las mejores prácticas para integrar modelos de lenguaje e inteligencia artificial generativa en productos reales de software.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- JavaScript de Bootstrap 5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
