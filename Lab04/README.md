@@ -1,9 +1,9 @@
 # Lab 04: Gestor de Tareas Universitarias
 
-**Estudiante:** Melany Yaritza Gomez Huaman
-**Curso:** Introducción al Desarrollo Web
-**Semestre:** 2026-2
-**Escuela Profesional de Ingeniería de Sistemas**
+- **Estudiante:** Melany Yaritza Gomez Huaman
+- **Curso:** Introducción al Desarrollo Web
+- **Semestre:** 2026-2
+- **Escuela Profesional de Ingeniería de Sistemas**
 
 ## Descripción
 Aplicación web en JavaScript (ES6+) para gestionar tareas académicas. Incluye validación de formulario, manipulación dinámica del DOM, filtros (Todas / Pendientes / Completadas) y persistencia con localStorage.
