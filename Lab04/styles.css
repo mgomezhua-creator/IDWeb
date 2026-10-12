@@ -1,0 +1,13 @@
+.tarea-completada .tarea-titulo {
+  text-decoration: line-through;
+  color: #92bee6;
+}
+.tarea-completada {
+  background-color: #f8f9fa;
+}
+.tarea-vencida .tarea-fecha {
+  color: #dc3545 !important;
+  font-weight: 600;
+}
+
+
